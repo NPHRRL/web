@@ -33,7 +33,6 @@
   top: 150px;
   left: 70px;
   z-index: 10;
-
 }
 
 .cpd-hero-description h1{
@@ -222,12 +221,22 @@
 
 @media(max-width: 620px) {
   .cpd-discription-section{
-    padding: 100px 20px;
+    padding: 0 0;
     background-color: #f5f5f5;
+    border-radius: 0;
+  }
+
+  .hero-img-container::before{
+    border-radius: 0;
   }
 
   .hero-img{
-    height: 300px;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .cpd-hero-description{
+    left: 50px;
   }
 
   .cpd-hero-description h1{
@@ -253,7 +262,7 @@
   
   .hero-call-to-action{
     border: 1px solid #298;
-    padding: 5px 8px;
+    padding: 10px 18px;
     font-size: 1.3rem;
     border-radius: 2px;
     cursor: pointer;
