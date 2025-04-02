@@ -16,3 +16,39 @@ hamMenu.addEventListener("click", () => {
   offScreenMenu.classList.toggle("active");
 });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".service");
+
+  function checkScroll() {
+    elements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (elementTop < windowHeight - 100) {
+        element.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkScroll);
+  checkScroll();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".card");
+
+  function checkScroll() {
+    elements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (elementTop < windowHeight - 100) {
+        element.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkScroll);
+  checkScroll();
+});
