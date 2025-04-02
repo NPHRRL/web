@@ -470,7 +470,6 @@
 
 .research-section {
   display: flex;
-  height: auto;
   align-items: center;
   justify-content: center;
   background-color: white;
@@ -650,7 +649,7 @@
   }
 
   .research-section{
-    margin-top: 250px;
+    margin-top: 50px;
   }
 
   .research-section h1,
@@ -686,7 +685,7 @@
   }
 
   .research-section{
-    margin-top: 450px;
+    margin-top: 0px;
   }
 
   .research-section h1,
