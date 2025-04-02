@@ -34,8 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   });
 
-
-
   document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll(".slider-container");
   
@@ -53,4 +51,12 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkScroll);
     checkScroll();
   });
-  
+
+  window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
