@@ -17,18 +17,24 @@
 <body>
   <header>
     <div class="logo-container">
-        <a href="#">
+        <a href="index.html">
             <img class="health-logo" src="images/OHB-WIDE-Logo (1).png" alt="Health Logo">
         </a>
     </div>
     <nav class="nav">
         <a href="index.html">Home</a>
         <a href="#">About Us</a>
-        <a href="#">Services</a>
+        <div class="dropdown">
+            <a href="#">Services <i class='bx bx-chevron-down'></i></a>
+            <div class="dropdown-content">
+                <a class="active" href="cpd.htmls">CPD</a>
+                <a href="phem.html">PHEM</a>
+                <a href="">Research</a>
+                </div>
+        </div>
         <a href="#">Publications</a>
         <a href="#">Contact</a>
     </nav>
-
 
     <nav class="nav-mobile">
       <div class="ham-menu">
@@ -44,11 +50,16 @@
           <i class='bx bx-home-alt-2' ></i>
           <a href="index.html">Home</a></li>
         <li>
-          <i class='bx bx-info-circle' ></i> 
+          <i class='bx bx-info-circle' ></i>
           <a href="">About</a></li>
-        <li>
+        <li class="dropdown-mobile">
           <i class='bx bx-cog'></i>
-          <a href="">Services</a>
+          <a href="">Services <i class='bx bx-chevron-down'></i></a>
+          <ul class="dropdown-content-mobile">
+              <li><a href="active">CPD</a></li>
+              <li><a href="#">PHEM</a></li>
+              <li><a href="#">Research</a></li>
+              </ul>
         </li>
         <li>
           <i class='bx bxs-file-blank' ></i>
@@ -60,7 +71,7 @@
         </li>
       </ul>
     </div>
-  </header>
+</header>
 
   <section class="cpd-discription-section">
     <div class="hero-img-container">
@@ -77,6 +88,9 @@
   </section>
 
   <div class="slider-container">
+    <div class="slide-section-title">
+      <h1>Our CPD Highlights</h1>
+    </div>
     <div class="slider">
 
       <div class="slide active">

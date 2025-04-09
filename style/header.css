@@ -10,7 +10,7 @@ header{
   right: 0;
   z-index: 100;
   background-color: transparent;
-  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, box-shadow: 0.3s ease-in-out;
 }
 
 .health-logo{
@@ -21,7 +21,6 @@ header{
 
 header.scrolled {
   background-color: whitesmoke; 
-  /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);*/
   padding: 2px 50px;
 }
 
@@ -121,6 +120,7 @@ header.scrolled .nav .active {
   font-size: 2rem;
   transition: 0.3s ease;
   padding: 0 0 0 50px;
+  overflow-y: auto;
 }
 
 .off-screen-menu ul{

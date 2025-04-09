@@ -60,3 +60,16 @@ document.addEventListener("DOMContentLoaded", function () {
       header.classList.remove("scrolled");
     }
   });
+
+
+  setTimeout(document.addEventListener('DOMContentLoaded', function() {
+    const serviceDropdownMobile = document.querySelector('.off-screen-menu .dropdown-mobile > a');
+    const dropdownContentMobile = document.querySelector('.off-screen-menu .dropdown-content-mobile');
+
+    if (serviceDropdownMobile && dropdownContentMobile) {
+        serviceDropdownMobile.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.off-screen-menu .dropdown-mobile').classList.toggle('open');
+        });
+    }
+}), 1000);
