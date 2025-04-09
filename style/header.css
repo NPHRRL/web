@@ -10,8 +10,80 @@ header{
   right: 0;
   z-index: 100;
   background-color: transparent;
-  transition: background 0.3s ease-in-out, box-shadow: 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out
 }
+
+.nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f2f2f2;
+  min-width: 160px;
+  z-index: 1;
+  left: -25px;
+  top: 30px;
+  box-shadow: 10px 10px 16px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.nav .dropdown-content .active{
+  background-color: #298;
+  color: white;
+  border-radius: 10px;
+}
+
+.nav .dropdown-content a {
+  color: #298;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 2px 0
+}
+
+.nav .dropdown-content a::after{
+  display: none;
+}
+
+.nav .dropdown-content a:hover {
+  color: whitesmoke;
+  background-color: #298;
+  border-radius: 10px;
+}
+
+.nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.off-screen-menu .dropdown-mobile {
+  position: relative;
+}
+
+.off-screen-menu .dropdown-content-mobile {
+  display: none;
+  padding-left: 45px;
+  margin-top: 0px;
+}
+
+.off-screen-menu .dropdown-content-mobile a::after{
+  display: none;
+}
+
+.off-screen-menu .dropdown-content-mobile a {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: white;
+}
+
+.off-screen-menu .dropdown-mobile.open .dropdown-content-mobile {
+  display: block;
+}
+
 
 .health-logo{
   width: 70px;
@@ -42,7 +114,7 @@ header.scrolled .nav .active {
   column-gap: 35px;
   padding-right: 100px;
   flex: 1;
-  max-width: 750px;
+  max-width: 820px;
 }
 
 .nav a{
@@ -120,7 +192,6 @@ header.scrolled .nav .active {
   font-size: 2rem;
   transition: 0.3s ease;
   padding: 0 0 0 50px;
-  overflow-y: auto;
 }
 
 .off-screen-menu ul{

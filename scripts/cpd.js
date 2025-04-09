@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-  setTimeout(document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function() {
     const serviceDropdownMobile = document.querySelector('.off-screen-menu .dropdown-mobile > a');
     const dropdownContentMobile = document.querySelector('.off-screen-menu .dropdown-content-mobile');
 
@@ -72,4 +72,4 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelector('.off-screen-menu .dropdown-mobile').classList.toggle('open');
         });
     }
-}), 1000);
+});
